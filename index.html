@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Land | New & Used Porsche Center in South West Lagos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .line-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .line-text::before,
+        .line-text::after {
+            content: "";
+            flex: 1;
+            border-top: 1px solid #333;
+        }
+
+        .line-text::before {
+            margin-right: 10px;
+        }
+
+        .line-text::after {
+            margin-left: 10px;
+        }
+
+        .wallpaper-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        .wallpaper-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+        }
+
+        .wallpaper-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 50%;
+            max-height: 80%;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .mySlides img {
+            width: 100%;
+        }
+
+        .models-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .model-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(25% - 20px); /* Adjust to show 4 items in a row */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-align: center;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .model-item img {
+            width: 80%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .model-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .model-item .model-link {
+            margin-top: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .model-item .model-link:hover {
+            color: #575757;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="https://www.porsche.com/">New Porsche</a></li>
+                <li><a href="https://www.porsche.com/">Used Porsche</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="https://www.porscheatlantaperimeter.com/porsche-racing-heritage/">Racing Heritage</a></li>
+                <li><a href="https://www.porsche.com/international/models/">Models</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1><center>Porsche Land Lagos</center></h1>
+    <div class="line-text">Porsche</div>
+    
+    <div class="wallpaper-container">
+        <img src="/wallpaper.jpg" alt="Porsche Wallpaper">
+        <div class="wallpaper-text">Experience the Thrill of Porsche</div>
+    </div>
+    
+    <h2><center>Models</center></h2>
+    <div class="models-grid">
+        <div class="model-item">
+            <img src="/cayenne.jpg" alt="Cayenne">
+            <a href="https://www.porsche.com/usa/models/cayenne/" class="model-link">Cayenne Cars</a>
+        </div>
+        <div class="model-item">
+            <img src="/taycan.jpg" alt="Taycan">
+            <a href="https://www.porsche.com/usa/models/taycan/" class="model-link">Taycan Cars</a>
+        </div>
+        <div class="model-item">
+            <img src="/911 gt3.jpg" alt="911 GT3">
+            <a href="https://www.porsche.com/usa/models/911/" class="model-link">911 GT3 Cars</a>
+        </div>
+        <div class="model-item">
+            <img src="/718.jpg" alt="718">
+            <a href="https://www.porsche.com/usa/models/718/" class="model-link">718 Cars</a>
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="/slideshow 1.jpg" alt="Porsche Image 1">
+        </div>
+        <div class="mySlides fade">
+            <img src="/slideshow 2.jpg" alt="Porsche Image 2">
+        </div>
+        <div class="mySlides fade">
+            <img src="/slideshow 3.jpg" alt="Porsche Image 3">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Porsche Land Lagos. All rights reserved.</p>
+        <p>
+            <a href="#contact">Contact Us</a> | 
+            <a href="#about">About Us</a> 
+            <a href="#privacy">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
